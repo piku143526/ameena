@@ -254,14 +254,7 @@ variable    "mysql_retained_backups" {
     type    = number
     default = 7
 }
-variable    "mysql_private_network" {
-    type    = string
-    default = null
-}
-variable    "mysql_public_network" {
-    type    = string
-    default = true
-}
+
 
 /******************************************
 	CLOUDSQL Postgresql VARIABLES

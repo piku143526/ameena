@@ -15,4 +15,6 @@ module "mysql" {
   mysql_backup_location                 = var.mysql_backup_location
   mysql_point_in_time_recovery_enabled  = var.mysql_point_in_time_recovery_enabled
   mysql_deletion_protection             = var.mysql_deletion_protection
+  mysql_public_network                  = var.mysql_public_network
+  mysql_private_network                 = var.mysql_private_network
 }

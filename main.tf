@@ -16,6 +16,6 @@ module "mysql" {
   mysql_point_in_time_recovery_enabled  = var.mysql_point_in_time_recovery_enabled
   mysql_deletion_protection             = var.mysql_deletion_protection
   mysql_public_network                  = var.mysql_public_network
-  mysql_private_network                 = "${format("%s","projects/iteindia-playground/global/networks/${var.client_name}-${var.envtype}-${var.vpc_name}")}"
+  mysql_private_network                 = "${format("%s","projects/noted-cider-362008/global/networks/${var.client_name}-${var.envtype}-${var.vpc_name}")}"
 
 }

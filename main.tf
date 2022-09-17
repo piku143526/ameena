@@ -1,6 +1,5 @@
 module "mysql" {
   source                                = "./modules/cloudsql/mysql"
-  depends_on                            = [module.network]
   mysql_vm_name                         = "${format("%s","${var.client_name}-${var.envtype}-${var.mysql_vm_name}")}"
   mysql_verion                          = var.mysql_verion
   mysql_vm_tier                         = var.mysql_vm_tier

@@ -9,7 +9,7 @@ terraform {
 
 provider "google" {
   credentials = file("./terraform-sa.json")
-  project = "iteindia-playground"
+  project = "noted-cider-362008"
   region  = "us-west1"
   zone    = "us-west1-c"
 }

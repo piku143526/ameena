@@ -22,10 +22,7 @@ resource  "google_sql_database_instance" "mysql-database" {
                 }
         } 
 
-            ip_configuration {
-                ipv4_enabled       = var.mysql_public_network
-                private_network    = var.mysql_private_network
-            }
+
     }
     timeouts {
         create = "60m"
